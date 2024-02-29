@@ -38,15 +38,18 @@
         @media screen and (min-width: 600px) {
             /*Aqui inician los cambios de tablet*/
             nav{
-                float: left;
+                display: inline-block;
                 width: 20%;
                 height: 600px;
+                vertical-align: top;
+            }
+            main > section{
+                display: inline-block;
+                width: 74%;
+                vertical-align: top;
             }
             header, .seccion, footer{
             height: 200px;
-            }
-            footer{
-            clear: left;
             }
             /*Aqui terminan los cambios de tablet*/
         }
@@ -64,6 +67,11 @@
         footer{
             background: rgb(207, 197, 5);
         }
+        main > section{
+                display: inline-block;
+                width: 76.4%;
+                vertical-align: top;
+            }
         /*Aqui terminan los cambios de desktop*/
         }
     </style>
