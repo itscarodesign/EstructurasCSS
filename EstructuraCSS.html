@@ -16,31 +16,55 @@
         }
         nav{
             background: #895159;
-            padding: 1em;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 20%;
-            height: 600px;
-        }
-        header, section, footer{
-            height: 200px;
         }
         header{
             background: #babde2;
-            padding: 1em;
         }
-        section{
+        .seccion{
             background: #DFAEA1;
-            padding: 1em;
         }
         footer{
             background: lavender;
+        }
+        a{
+            color: whitesmoke;
+        }
+        li{
+            text-align: left;
+        }
+        header, .seccion, footer, nav{
             padding: 1em;
-            positi
-            bottom: 0;
-            left: 0;
-            width: 100%; /*El pie de pagina abarcara todo el ancho de la pantalla
+            }
+        @media screen and (min-width: 600px) {
+            /*Aqui inician los cambios de tablet*/
+            nav{
+                float: left;
+                width: 20%;
+                height: 600px;
+            }
+            header, .seccion, footer{
+            height: 200px;
+            }
+            footer{
+            clear: left;
+            }
+            /*Aqui terminan los cambios de tablet*/
+        }
+        @media screen and (min-width: 1024px) {
+            /*Aqui inician los cambios de desktop*/
+            nav{
+            background: rgb(217, 61, 18);
+        }
+        header{
+            background: rgb(203, 226, 254);
+        }
+        .seccion{
+            background: rgb(228, 204, 178);
+        }
+        footer{
+            background: rgb(207, 197, 5);
+        }
+        /*Aqui terminan los cambios de desktop*/
         }
     </style>
 </head>
@@ -57,15 +81,19 @@
             <li><a href="#">Contacto</a></li>
         </ul>
     </nav>
+
     <section>
-        <h2>Sección 1</h2>
-        <p>Contenido de la primera sección.</p>
+        <section class="seccion">
+            <h2>Sección 1</h2>
+            <p>Contenido de la primera sección.</p>
+        </section>
+        
+        <section class="seccion">
+            <h2>Sección 2</h2>
+            <p>Contenido de la segunda sección.</p>
+        </section>
     </section>
     
-    <section>
-        <h2>Sección 2</h2>
-        <p>Contenido de la segunda sección.</p>
-    </section>
 </main>
     <footer>
         <p>Derechos de autor © 2024. Todos los derechos reservados.</p>
