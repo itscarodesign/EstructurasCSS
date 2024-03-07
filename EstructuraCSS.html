@@ -37,16 +37,14 @@
             }
         @media screen and (min-width: 600px) {
             /*Aqui inician los cambios de tablet*/
+            main{
+                display: flex;
+            }
             nav{
-                display: inline-block;
                 width: 20%;
-                height: 600px;
-                vertical-align: top;
             }
             main > section{
-                display: inline-block;
-                width: 74%;
-                vertical-align: top;
+                flex: 1;
             }
             header, .seccion, footer{
             height: 200px;
@@ -67,11 +65,6 @@
         footer{
             background: rgb(207, 197, 5);
         }
-        main > section{
-                display: inline-block;
-                width: 76.4%;
-                vertical-align: top;
-            }
         /*Aqui terminan los cambios de desktop*/
         }
     </style>
